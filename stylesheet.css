@@ -25,6 +25,7 @@ font-family:"poppins";
     align-items: center;
     width: 100%;
     height: 20vh;
+    box-sizing: border-box;
 }
 .part{
     display: flex;
@@ -72,9 +73,8 @@ table{
     width: 50%;
 
 }
-th{
+th,tr,td{
     border: 1px solid black;
     text-align: center;
-    
 
 }
