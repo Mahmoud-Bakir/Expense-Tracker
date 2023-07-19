@@ -1,4 +1,4 @@
-
+let total = $("#total");
   function addExpense() {
     const expense = $("#name");
     const amount = $("#amount");
@@ -7,9 +7,11 @@
     console.log(amount.val())
     let newRow = "<tr><td>" + expense.val() + "</td><td>" + amount.val() + "</td></tr>";
      $("#table").append(newRow);
-     expense.val("")
+     console.log(total)
+     total.text(parseInt(total.text()) + parseInt(amount.val()))
+     expense.text("")
      amount.val("")
-
+     
   }
 
 $(document).ready(function () {
